@@ -20,7 +20,7 @@ The Countdown Timer project calculates and displays the time remaining until the
 
 ### Screenshot
 
-![Screenshot of Countdown Timer](./images/screenshot.png)
+![Screenshot of Countdown Timer](images/Screenshot.png)
 
 ---
 
