@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Open+Sans:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("images/mountains-fog.jpg") center/cover no-repeat;
+  min-height: 100vh;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2C4A64;
+}
+
+.countdown-container {
+  text-align: center;
+  margin-top: -100px;
+}
+.countdown-container h3 {
+  font-size: 40px;
+}
+.countdown-container h1 {
+  font-size: 64px;
+}
+.countdown-container .timer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 180px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+@media (max-width: 970px) {
+  .countdown-container .timer {
+    gap: 100px;
+  }
+}
+@media (max-width: 420px) {
+  .countdown-container .timer {
+    gap: 50px;
+  }
+}
+.countdown-container .time-segment {
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+@media (max-width: 768px) {
+  .countdown-container .time-segment {
+    width: 70px;
+    padding: 8px;
+  }
+}
+.countdown-container .time-segment:hover {
+  transform: translateY(-10px);
+  background: #ffdecc;
+  border-radius: 20px;
+  padding: 20px;
+}
+.countdown-container .time-value {
+  font-size: 85px;
+  display: block;
+  animation: fade-in 0.5s ease-in-out;
+}
+@media (max-width: 768px) {
+  .countdown-container .time-value {
+    font-size: 38px;
+  }
+}
+.countdown-container .time-label {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=style.css.map */
